@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logout</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Configuração da Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        style-src 'self'; 
+        script-src 'self'; 
+        img-src 'self'; 
+        font-src 'self'; 
+        object-src 'none';
+    ">
+    <!-- X-Content-Type-Options -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
 </head>
 <body>
     <div class="container" id="logout-screen">
@@ -14,14 +25,14 @@
 
     <div class="container hidden" id="disconnected-screen">
         <h1>Goodbye! 👋</h1>
-        <p>You have been disconnected.</p>
+        <p>You have successfully logged out.</p>
         <div class="animation">
             <span>👋</span>
             <span>🌟</span>
             <span>🚪</span>
         </div>
         <button onclick="window.location.href='https://www.google.com';">
-            Go back to main page
+            Back to Home Page
         </button>
     </div>
 
