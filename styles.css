@@ -18,7 +18,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px;
+    width: 90%; /* Para melhorar a visualização em telas pequenas */
     transition: opacity 0.5s, transform 0.5s;
+    position: absolute; /* Para facilitar transições */
 }
 
 .hidden {
